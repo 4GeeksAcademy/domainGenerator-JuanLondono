@@ -19,7 +19,7 @@ window.onload = function() {
     }
   }
 
-  let parrafo = document.querySelector("#excusas");
+  let parrafo = document.querySelector("#domain");
   parrafo.textContent = unirPalabras;
 
   console.log(unirPalabras);
