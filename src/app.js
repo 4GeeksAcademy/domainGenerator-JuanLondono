@@ -7,5 +7,20 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let pronoun = ["el", "la"];
+  let adj = ["gran", "inmensa"];
+  let noun = ["consola", "pera"];
+
+  for (let i = 0; i < pronoun.lenght; i++) {
+    for (let j = 0; j < adj.lenght; i++) {
+      for (let j = 0; j < noun.lenght; i++) {
+        let unirPalabras = pronoun + adj + ".com");
+      }
+    }
+  }
+
+  let parrafo = document.querySelector("#excusas");
+  parrafo.textContent = unirPalabras;
+
+  console.log(unirPalabras);
 };
