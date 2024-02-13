@@ -11,16 +11,19 @@ window.onload = function() {
   let adj = ["gran", "inmensa"];
   let noun = ["consola", "pera"];
 
-  for (let i = 0; i < pronoun.lenght; i++) {
-    for (let j = 0; j < adj.lenght; i++) {
-      for (let j = 0; j < noun.lenght; i++) {
-        let unirPalabras = pronoun + adj + ".com");
+  let parrafo = document.querySelector("#domain");
+  console.log(parrafo);
+
+  for (let i = 0; i < pronoun.length; i++) {
+    for (let j = 0; j < adj.length; j++) {
+      for (let k = 0; k < noun.length; k++) {
+        let unirPalabras = `${pronoun[i]}${adj[j]}${noun[k]}.com`;
+        let p = document.createElement("p");
+        p.textContent = unirPalabras;
+        document.body.appendChild(p);
+        parrafo.textContent = unirPalabras;
+        console.log(unirPalabras);
       }
     }
   }
-
-  let parrafo = document.querySelector("#domain");
-  parrafo.textContent = unirPalabras;
-
-  console.log(unirPalabras);
 };
